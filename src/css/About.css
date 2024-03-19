@@ -21,22 +21,85 @@
     0 -1px 0px #000;
 }
 
+
+:root {
+    --underline-width: 0; /* Initial value */
+  }
+
+
 .aboutText::after {
     content: '';
     display: block; /* Makes it possible to set width and height */
-    width: 100%; /* Set the width to 100% of the parent element */
-    max-width: 800pt; /* Adjust the width as per your design requirements, this ensures it doesn't get wider than 250pt */
+    width: 1015pt; /* Use the CSS variable */
     height: 2px; /* Height of the line */
-    background-color: lightgray; /* Color of the line */
+    background-color: #ededed; /* Color of the line */
     position: fixed; /* Positioning relative to the .aboutText element */
     margin-top: 15pt;
-    
+    padding: 0 20px; /* Adds padding inside the navigation bar */
+
 }
 
 .paragraphBody{
 
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 45%;
+
+}
+
+.nameText{
+    font-size: 50pt;
+
+}
+.sweText{
+    font-size: 25pt;
+    
+}
+
+.locationText{
+    font-size: 20pt;
+    font-weight: 400;
+    
+}
+
+.descText{
+    font-size: 15pt;
+    font-weight: 400;
+
+}
+.imageBody{
+    position: fixed;
+    left: 20%;
+    top: 35%;
+}
+
+.albiPhoto{
+    width: 250pt;
+    height: auto;
+    border-radius: 500pt;
+}
+
+.paragraphBody a {
+    color: black;
+    font-size: 15pt;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+
+  }
+  
+  .paragraphBody a:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    z-index: -1;
+    top: 10pt;
+    left: 0;
+    background: pink;
+    animation-name: highlight;
+    animation-duration: 2.15s;
+    animation-direction: alternate; /* Make the animation run back and forth */
 
 }
