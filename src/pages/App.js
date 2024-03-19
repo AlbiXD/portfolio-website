@@ -6,6 +6,8 @@ import NavBar from '../components/NavBar';
 
 
 function App() {
+  document.title = "Albi's Portfolio"
+  
   return (
     <Router>
       <NavBar></NavBar>
