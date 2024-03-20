@@ -1,105 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Candal&family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Roboto");
 
-
-
-.mainBody{
-    position: fixed;
-
-
+.mainBody {
+  position: fixed;
 }
 
-.aboutText{
-    position: fixed;
-    top: 10%;
-    left: 15%;
-    font-family: Helvetica;
-    font-weight: 900;
-    font-size: 45pt;
-    text-shadow: 1px 0px 0px #000, 
-    0 1px 0px #000, 
-    -1px 0px 0px #000, 
+.aboutText {
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  font-family: Helvetica;
+  font-weight: 900;
+  font-size: 45pt;
+  text-shadow: 1px 0px 0px #000, 0 1px 0px #000, -1px 0px 0px #000,
     0 -1px 0px #000;
 }
 
-
-:root {
-    --underline-width: 0; /* Initial value */
-  }
-
-
 .aboutText::after {
-    content: '';
-    display: block; /* Makes it possible to set width and height */
-    width: 1015pt; /* Use the CSS variable */
-    height: 2px; /* Height of the line */
-    background-color: #ededed; /* Color of the line */
-    position: fixed; /* Positioning relative to the .aboutText element */
-    margin-top: 15pt;
-    padding: 0 20px; /* Adds padding inside the navigation bar */
-
+  content: "";
+  display: block; /* Makes it possible to set width and height */
+  width: 800pt; /* Use the CSS variable */
+  height: 2px; /* Height of the line */
+  background-color: #ededed; /* Color of the line */
+  position: fixed; /* Positioning relative to the .aboutText element */
+  margin-top: 15pt;
+  padding: 0 20px; /* Adds padding inside the navigation bar */
 }
 
-.paragraphBody{
-
-    position: fixed;
-    top: 30%;
-    left: 45%;
-
+.paragraphBody {
+  position: fixed;
+  top: 30%;
+  left: 45%;
 }
 
-.nameText{
-    font-size: 50pt;
-
-}
-.sweText{
-    font-size: 25pt;
-    
+.imageParagraph {
+  position: relative;
+  left: 15%; /* Set left to 50% */
 }
 
-.locationText{
-    font-size: 20pt;
-    font-weight: 400;
-    
-}
+.nameText {
+  position: relative;
 
-.descText{
-    font-size: 15pt;
-    font-weight: 400;
-
+  font-size: 50pt;
 }
-.imageBody{
-    position: fixed;
-    left: 20%;
-    top: 35%;
-}
-
-.albiPhoto{
-    width: 250pt;
-    height: auto;
-    border-radius: 500pt;
+.sweText {
+  font-size: 25pt;
 }
 
 .paragraphBody a {
-    color: black;
-    font-size: 15pt;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
+  color: black;
+  font-size: 15pt;
+  text-decoration: none;
+  position: fixed;
+  cursor: pointer;
+}
 
-  }
-  
-  .paragraphBody a:after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 65%;
-    z-index: -1;
-    top: 10pt;
-    left: 0;
-    background: pink;
-    animation-name: highlight;
-    animation-duration: 2.15s;
-    animation-direction: alternate; /* Make the animation run back and forth */
+.imageBody {
+  position: fixed;
+  left: 20%;
+  top: 30%;
+}
 
+.albiPhoto {
+  width: 150pt;
+  height: auto;
+  border-radius: 500pt;
+}
+
+.paragraphBody a:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  z-index: -1;
+  top: 10pt;
+  left: 0;
+  background: pink;
+  animation-name: highlight;
+  animation-duration: 2.15s;
+  animation-direction: alternate; /* Make the animation run back and forth */
 }
