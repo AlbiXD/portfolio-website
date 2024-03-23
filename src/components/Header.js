@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "../css/header.css";
-import "../css/dot.css";
+
+;
 function Header({ title }) {
   useEffect(() => {
     setLinePosition();
