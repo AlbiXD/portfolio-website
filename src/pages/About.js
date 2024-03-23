@@ -1,5 +1,4 @@
-import "../css/About.css";
-import "../css/Home.css";
+import "../css/about.css";
 import "../components/NavBar";
 import ResumePDF from "../pdf/Resume.pdf"; // Import the PDF file
 import Header from "../components/Header"
