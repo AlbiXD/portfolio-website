@@ -5,17 +5,28 @@
     font-family: Helvetica;
     font-weight: 900;
     font-size: 45pt;
-    text-shadow: 1px 0px 0px #000, 0 1px 0px #000, -1px 0px 0px #000,
-      0 -1px 0px #000;
+
+  }
+
+  :root {
+    --bar-width: 0px;
   }
   
   .headerText::after {
     content: "";
     display: block; /* Makes it possible to set width and height */
-    width: 800pt; /* Use the CSS variable */
+    width: var(--bar-width); /* Use the CSS variable */
     height: 2px; /* Height of the line */
     background-color: #ededed; /* Color of the line */
     position: fixed; /* Positioning relative to the .aboutText element */
     margin-top: 15pt;
     padding: 0 20px; /* Adds padding inside the navigation bar */
+  }
+
+  /* Adjust position for smaller screens */
+@media screen and (max-width: 1200px) {
+
+
+
+    
   }

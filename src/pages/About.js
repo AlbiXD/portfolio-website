@@ -22,15 +22,6 @@ function About() {
   return (
     <div className="mainBody">
       <Header title = "About"></Header>
-      <div className="imageBody">
-        <img src="https://i.imgur.com/vJgMFri.jpeg" className="albiPhoto" />
-
-      </div>
-
-      <div className="paragraphBody">
-
-        <a onClick={handleOpenPDF}>Resume</a>
-      </div>
     </div>
   );
 }
