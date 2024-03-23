@@ -1,0 +1,23 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Align navbar to the right */
+    align-items: end;
+    position: fixed; /* Changed from absolute to fixed */
+    top: 3%; /* Adjust top positioning */
+    right: 10%; /* Align navbar to the right side of the screen */
+    max-width: 1200px; /* Example max-width; adjust based on your design */
+    padding: 0 20px; /* Adds padding inside the navigation bar */
+  
+  }
+  
+  
+  .navBar a {
+    color: black; /* Use the color inherited from the parent */
+    text-decoration: none; /* Remove the underline */
+    margin-right: 35px; /* Add right margin to create space between links */
+    font-family: "Helvetica";
+    font-size: 14pt;
+    font-weight: lighter;
+  }
+  

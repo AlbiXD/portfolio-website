@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("../css/animation.css");
+
 
 .textBody {
   display: flex;
@@ -30,29 +32,6 @@
   margin: 7px 0;
 }
 
-.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end; /* Align navbar to the right */
-  align-items: end;
-  position: fixed; /* Changed from absolute to fixed */
-  top: 3%; /* Adjust top positioning */
-  right: 10%; /* Align navbar to the right side of the screen */
-  max-width: 1200px; /* Example max-width; adjust based on your design */
-  padding: 0 20px; /* Adds padding inside the navigation bar */
-
-}
-
-
-.navBar a {
-  color: black; /* Use the color inherited from the parent */
-  text-decoration: none; /* Remove the underline */
-  margin-right: 35px; /* Add right margin to create space between links */
-  font-family: "Helvetica";
-  font-size: 14pt;
-  font-weight: lighter;
-}
-
 .darkModeImage {
   width: 30px;
   height: auto;
@@ -81,14 +60,4 @@
   animation-direction: alternate; /* Make the animation run back and forth */
 }
 
-@keyframes highlight {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
 
-  100% {
-    width: 100%;
-    opacity: 1;
-  }
-}

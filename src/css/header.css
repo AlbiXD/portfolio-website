@@ -1,15 +1,22 @@
+@import url(../css/animation.css);
+
+
+
 .headerText {
     position: fixed;
-    top: 10%;
+    top: 15%;
     left: 15%;
     font-family: Helvetica;
     font-weight: 900;
     font-size: 45pt;
-
+    animation-name: fade;
+    animation-duration: 1s;
   }
 
   :root {
     --bar-width: 0px;
+    --opacity: 0%;
+
   }
   
   .headerText::after {
@@ -21,12 +28,17 @@
     position: fixed; /* Positioning relative to the .aboutText element */
     margin-top: 15pt;
     padding: 0 20px; /* Adds padding inside the navigation bar */
+
+    animation-name: fade;
+    animation-duration: 1s;
   }
 
-  /* Adjust position for smaller screens */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
 
-
+  .headerText{
+    font-size: 30px;
+  }
 
     
   }
+
