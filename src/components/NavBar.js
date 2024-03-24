@@ -1,23 +1,16 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import "../css/navbar.css"
-
+import "../css/navbar.css";
 
 function NavBar() {
-
   return (
     <nav className="navBar">
-      <Link to="/">Home</Link>
-      <Link to="/blog">Blog</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/">
-        <img
-          src="https://i.imgur.com/4FQDn6f.png"
-          className="darkModeImage"
-          id="moonImage"
-        />
-      </Link>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      
     </nav>
   );
 }

@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 @import url("../css/animation.css");
+@import url(../css/properties.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+.mainContainer{
+}
 
 .textBody {
   display: flex;
@@ -8,41 +13,45 @@
   justify-content: flex-end;
   align-items: left;
   position: absolute;
-  top: 59%;
-  left: 32%;
+  top: 550px;
+  left: 35%;
   transform: translate(-50%, -50%);
-  font-family: "Helvetica";
+  animation: fade;
+  animation-duration: 0.5s;
 }
 
 .helloText {
   font-size: 42px;
   font-weight: bolder;
+  color: var(--font-color);
   margin: 7px 0;
+  font-family: "Roboto";
 }
 
 .SWEText {
   font-size: 28px;
   font-weight: 400;
+  color: var(--font-color);
   margin: 7px 0;
+  font-family: "Roboto";
+
 }
 
 .learnText {
   font-size: 22px;
+  font-family: "Roboto";
+  color: var(--font-color);
   font-weight: 400;
   margin: 7px 0;
 }
 
-.darkModeImage {
-  width: 30px;
-  height: auto;
-  position: relative;
-  top: 10px;
-}
 
 .textBody a {
-  color: black;
+  color: var(--highlited-text);
   text-decoration: none;
   position: relative;
+  font-family: "Roboto";
+
 }
 
 .textBody a:after {
@@ -54,7 +63,7 @@
   z-index: -1;
   top: 0;
   left: 0;
-  background: linear-gradient(to top, pink 50%, transparent 70%);
+  background: var(--highlight-color);
   animation-name: highlight;
   animation-duration: 2.15s;
   animation-direction: alternate; /* Make the animation run back and forth */

@@ -1,0 +1,37 @@
+@import url(../css/animation.css);
+
+.sectionContainer {
+    position: relative;
+}
+.headerText {
+  position: relative;
+  left: 23%; /* Fixed horizontal position */
+  font-family: Helvetica;
+  font-weight: 900;
+  font-size: 30pt;
+  animation-name: fade;
+  color: var(--font-color);
+  animation-duration: 0.5s;
+  padding-bottom: 50px;
+
+}
+
+:root {
+  --bar-width: 1050px;
+  --opacity: 0%;
+}
+
+.headerText::after {
+  content: "";
+  display: block;
+  width: var(--bar-width);
+  height: 2px;
+  background-color: var(--bar-color);
+  position: relative; /* Position relative to the .headerText */
+  bottom: -20px; /* Adjust this value to control the distance between text and line */
+  left: 0;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+
