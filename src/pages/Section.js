@@ -1,5 +1,5 @@
 import "../css/section.css";
-
+import "../pages/styles.css"
 function Section({ sectionName, children, position, sectionID }) {
   return (
     <div className="sectionContainer" style={{ top: `${position}px` }}>
