@@ -5,8 +5,10 @@
 
 .imageContainer{
     position: relative;
-    left: 450px;
-    bottom: 330px;
+    left: 500px;
+    bottom: 250px;
+    animation: fade;
+    animation-duration: .5s;
 }
 
 .photo{
@@ -14,12 +16,20 @@
     width: auto;
     height: 180px;
 
+
 }
 
 .textContainer{
     position: relative;
     left: 750px;
+    bottom: 25px;
+    animation: fade 0.5s;
+    
+
 }
+.resumeLink:hover {
+    cursor: pointer;
+  }
 
 .text{
 
@@ -27,10 +37,9 @@
     font-size: 13pt;
     position: relative;
     left: 50px;
-    padding-bottom: 15px;
     font-family: 'Roboto';
- 
-    line-height: 30px;
+    line-height: 25px;
+    margin-bottom: -40px ;
 }
 
 
@@ -50,3 +59,27 @@
     font-family: 'Roboto';
     bottom: 10px;
 }
+
+.textContainer a {
+    text-decoration: none;
+    color: black;
+    font-size: 14pt;
+    position: relative;
+    font-family: "Roboto";
+    left: 50px;
+  }
+  
+  .textContainer a:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: var(--highlight-color);
+    animation-name: highlight;
+    animation-duration: 2.15s;
+    animation-direction: alternate; /* Make the animation run back and forth */
+  }

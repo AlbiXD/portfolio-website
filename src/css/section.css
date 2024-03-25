@@ -12,7 +12,8 @@
   animation-name: fade;
   color: var(--font-color);
   animation-duration: 0.5s;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+
 
 }
 
