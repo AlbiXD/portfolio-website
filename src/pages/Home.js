@@ -32,7 +32,7 @@ function Home() {
       </section>
 
       <Section sectionName="About" position={"1000"} sectionID="about">
-        <div className="textContainer">
+        <div class="ml-[750px] relative bottom-7">
           <p class="text-stone-300 relative left-10 top-10 pt-4">
             {" "}
             A software engineer who is eager to learn, adapt and inovate through
@@ -147,12 +147,40 @@ function Home() {
               <p class="font-bold text-2xl top-3 pb-2 left-[5%] relative text-white">
                 Frameworks
               </p>
-              <div class="relative  left-3 text-white">
-                <p class="ml-6 text-xl  relative text-white">ReactJS</p>
-                <p class="ml-6 text-xl    relative text-white">NodeJS</p>
-                <p class="ml-6 text-xl   relative text-white">.NET Core</p>
-                <p class="ml-6 text-xl    relative text-white">Bootstrap</p>
-                <p class="ml-6 text-xl    relative text-white">Tailwind CSS</p>
+
+              <div>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/react.png`}
+                  class="w-5 h-auto relative top-4 mb-2 "
+                ></img>
+
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/node.png`}
+                  class="w-5 h-auto relative top-7 "
+                ></img>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/net.png`}
+                  class="w-5 h-auto relative top-[52px] mb-4 brightness-0 invert"
+                ></img>
+
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/boots.png`}
+                  class="w-5 h-auto relative top-[56px] mb-4 brightness-0 invert"
+                ></img>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/tail.png`}
+                  class="w-5 h-auto relative top-[59px] mb-4 brightness-0 invert"
+                ></img>
+              </div>
+
+              <div class="relative  left-3 text-white bottom-[130px]">
+                <p class="ml-6 text-xl mb-3  relative text-white">ReactJS</p>
+                <p class="ml-6 text-xl mb-3   relative text-white">NodeJS</p>
+                <p class="ml-6 text-xl  mb-2 relative text-white">.NET Core</p>
+                <p class="ml-6 text-xl  mb-2  relative text-white">Bootstrap</p>
+                <p class="ml-6 text-xl  mb-2   relative text-white">
+                  Tailwind CSS
+                </p>
               </div>
             </Card>
           </div>
@@ -162,11 +190,26 @@ function Home() {
               <p class="font-bold text-2xl top-3 pb-2 left-[5%] relative text-white">
                 Database
               </p>
-              <div class="relative  left-3 text-white">
+              <div>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/sql.png`}
+                  class="w-5 h-auto relative top-4 mb-4 brightness-0 invert"
+                ></img>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/post.png`}
+                  class="w-5 h-auto relative top-5 mb-4 brightness-0 invert"
+                ></img>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/mongo.png`}
+                  class="w-5 h-auto relative top-5 mb-4 brightness-0 invert"
+                ></img>
+              </div>
+              <div class="relative bottom-[100px]  left-3 text-white">
                 <p class="ml-6 text-xl  relative text-white">MySQL</p>
-                <p class="ml-6 text-xl    relative text-white">PostgreSQL</p>
-                <p class="ml-6 text-xl   relative text-white">.NET Core</p>
-
+                <p class="ml-6 text-xl top-3   relative text-white">
+                  PostgreSQL
+                </p>
+                <p class="ml-6 text-xl  top-6 relative text-white">MongoDB</p>
               </div>
             </Card>
           </div>
@@ -176,14 +219,79 @@ function Home() {
               <p class="font-bold text-2xl top-3 pb-2 left-[5%] relative text-white">
                 Other tools
               </p>
-              <div class="relative  left-3 text-white">
-                <p class="ml-6 text-xl  relative text-white">Git</p>
-                <p class="ml-6 text-xl    relative text-white">Eclipse</p>
-                <p class="ml-6 text-xl   relative text-white">VSCode</p>
-                <p class="ml-6 text-xl    relative text-white">AWS</p>
+
+              <div class="relative bottom-9">
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/git.png`}
+                  class="w-5 h-auto relative top-[52px] mb-4 brightness-0 invert"
+                ></img>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/vs.png`}
+                  class="w-5 h-auto relative top-[54px] mb-4 brightness-0 invert"
+                ></img>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/aws.png`}
+                  class="w-5 h-auto relative top-[63px] mb-4 brightness-0 invert"
+                ></img>
+              </div>
+
+              <div class="relative bottom-[90px]  left-3 text-white">
+                <p class="ml-6 text-xl mb-1 bottom-[3px] relative text-white">
+                  Git
+                </p>
+                <p class="ml-6 text-xl top-1 relative text-white">VSCode</p>
+                <p class="ml-6 text-xl  top-4  relative text-white">AWS</p>
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      <Section sectionName="Projects" position={"100"} sectionID="projects">
+        <p class="text-3xl text-white relative left-[45%] top-10">
+          Coming soon...
+        </p>
+      </Section>
+
+      <section id="contact">
+        <div class="relative left-[43%] mt-[1000px]">
+          <div class="flex flex-row space-x-5">
+            <a href="https://github.com/AlbiXD">
+              <img
+                src={`${process.env.PUBLIC_URL}/icons/github.png`}
+                class="w-8 h-auto relative  brightness-0 invert"
+              ></img>
+            </a>
+            <a href="https://www.linkedin.com/in/albi-zhaku-386803254/">
+              <img
+                src={`${process.env.PUBLIC_URL}/icons/ln.png`}
+                class="w-9 bottom-1 h-auto relative "
+              ></img>
+            </a>
+            <a href="https://www.youtube.com/channel/UCnkLo7WSt6Pm8wsGxh0MncQ">
+              <img
+                src={`${process.env.PUBLIC_URL}/icons/youtube.png`}
+                class="w-9 h-auto top-1 relative"
+              ></img>
+            </a>
+
+            <a href="albizhaku1@gmail.com">
+              <img
+                src={`${process.env.PUBLIC_URL}/icons/gmail.png`}
+                class="w-9 h-auto top-1 relative "
+              ></img>
+            </a>
+            <a href="https://www.w3schools.com/">
+              <img
+                src={`${process.env.PUBLIC_URL}/icons/favicon.svg`}
+                class="w-9 h-auto  relative "
+              ></img>
+            </a>
+
+          </div>
+          <div class = "relative left-[4.5%] top-3">
+              <p class="text-white">© Albi Zhaku</p>
+            </div>
         </div>
       </section>
     </div>
