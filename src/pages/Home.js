@@ -5,18 +5,18 @@ import ResumePDF from "../pdf/Resume.pdf"; // Import the PDF file
 import "../css/skills.css";
 import Card from "../components/Card.js";
 function Home() {
-  const handleOpenPDF = () => {
-    // Step 1: Download the PDF
-    fetch(ResumePDF)
-      .then((response) => response.blob())
-      .then((blob) => {
-        // Step 2: Create a URL for the downloaded blob
-        const url = URL.createObjectURL(blob);
-        // Step 3: Open the PDF in a new window
-        window.open(url, "_blank");
-      })
-      .catch((error) => console.error("Error downloading PDF:", error));
-  };
+  // const handleOpenPDF = () => {
+  //   // Step 1: Download the PDF
+  //   fetch(ResumePDF)
+  //     .then((response) => response.blob())
+  //     .then((blob) => {
+  //       // Step 2: Create a URL for the downloaded blob
+  //       const url = URL.createObjectURL(blob);
+  //       // Step 3: Open the PDF in a new window
+  //       window.open(url, "_blank");
+  //     })
+  //     .catch((error) => console.error("Error downloading PDF:", error));
+  // };
 
   return (
     <div className="mainContainer">
@@ -71,15 +71,8 @@ function Home() {
           </p>
           <p class="relative bottom-2">🏋️</p>
 
-          <a
-            style={{ top: "70px", left: "40px" }}
-            onClick={handleOpenPDF}
-            className="resumeLink"
-          >
-            Resume
-          </a>
         </div>
-        <div class="relative ml-[430px] mt-[-290px]">
+        <div class="relative ml-[430px] mt-[-270px]">
           <img
             class="w-auto h-[180px] rounded-full"
             src={`${process.env.PUBLIC_URL}/icons/picture.jpg`}
@@ -275,7 +268,7 @@ function Home() {
               ></img>
             </a>
 
-            <a href="albizhaku1@gmail.com">
+            <a href="mailto:albizhaku1@gmail.com">
               <img
                 src={`${process.env.PUBLIC_URL}/icons/gmail.png`}
                 class="w-9 h-auto top-1 relative "
